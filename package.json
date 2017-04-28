@@ -12,6 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+		"deploy": "yarn build && surge -d create-react-test.surge.sh -p ./build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
